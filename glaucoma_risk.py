@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 
 # Load the trained model
-model = pickle.load(open("glaucoma_model.pkl", "rb"))
+model = pickle.load(open("log_reg_model.pkl", "rb"))
 
 st.title("Glaucoma Prediction App")
 st.write("Fill in the patient details below and click **Predict** to check for glaucoma.")
@@ -54,3 +54,4 @@ st.write("""
 3. Select appropriate options for Gender, Diabetes, and Hypertension.
 4. Click the **Predict** button to see the predicted diagnosis.
 """)
+
